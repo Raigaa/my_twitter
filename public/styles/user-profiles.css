@@ -1,0 +1,43 @@
+
+/*POP UP MODAL*/
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+  }
+  
+  .modal.show {
+    display: block;
+  }
+  
+
+.tweet-card {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    margin-bottom: 16px;
+}
+
+.tweet-content {
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.tweet-media {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-top: 8px;
+}
+
+.tweet-author {
+    font-size: 14px;
+    font-style: italic;
+    color: #666;
+    margin-top: 8px;
+}

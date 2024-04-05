@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Registration</title>
+</head>
+
+<body class="bg-gray-200 flex items-center justify-center h-screen">
+
+    <form id="create-account" class="bg-white p-6 rounded shadow-md w-80">
+        <h1 class="text-2xl font-bold mb-2">Registration</h1>
+        <label for="firstname" class="block text-sm font-medium text-gray-700">First Name</label>
+        <input type="text" name="firstname" id="firstname" placeholder="First Name" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+        <label for="lastname" class="block text-sm font-medium text-gray-700 mt-4">Last Name</label>
+        <input type="text" name="lastname" id="lastname" placeholder="Last Name" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+        <label for="username" class="block text-sm font-medium text-gray-700 mt-4">Username</label>
+        <input type="text" name="username" id="username" placeholder="Username" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+        <label for="email" class="block text-sm font-medium text-gray-700 mt-4">Email</label>
+        <input type="email" name="email" id="email" placeholder="Email" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+        <label for="dob" class="block text-sm font-medium text-gray-700 mt-4">Date of Birth</label>
+        <input type="date" name="dob" id="dob" placeholder="Date of Birth" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+        <label for="password" class="block text-sm font-medium text-gray-700 mt-4">Password</label>
+        <input type="password" name="password" id="password" placeholder="Password" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+        <label for="confirm_password" class="block text-sm font-medium text-gray-700 mt-4">Confirm Password</label>
+        <input type="password" name="confirm_password" id="confirm_password" placeholder="Confirm Password" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+        <button type="submit" id="submit-form" class="mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Register</button>
+        <p class="mt-4">Already have an account? <a href="login.html" class="text-blue-500 hover:underline">Login</a></p>
+    </form>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./../public/js/request/SignupAjax.js"></script>
+</body>
+</html>

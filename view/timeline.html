@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="module" src="../public/js/components/navbar.js"></script>
+    <script src="../public/js/request/newBark.js"></script>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"/>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Timeline</title>
+  </head>
+
+  <body>
+    <div id="tweets" class="p-5"></div>
+
+    <div class="d-flex justify-content-center mt-5" id="tweet-input-container">
+      <div class="w-50">
+        <div class="one-column">
+          <form method="post" id="barkForm" class="flex flex-col">
+            <input
+              type="text"
+              id="tweet-input"
+              placeholder="Bark something!"
+              maxlength="140"
+              class="border p-2 rounded"
+            />
+            <input type="file" id="tweet-image" accept="image/*" class="mt-2" />
+            <button
+              type="submit "
+              id="tweet-button"
+              class="bg-blue-500 text-white p-2 rounded mt-2"
+            >
+              Bark
+            </button>
+          </form>
+        </div>
+        <div id="followedTweetContainer"></div>
+        <div id="card-container" class="mt-5"></div>
+      </div>
+    </div>
+
+  </body>
+</html>
